@@ -1,5 +1,5 @@
 # Khan Autos
-
+**🔗 [Click here to view the Live Demo](https://khanautosstore.netlify.app/)**
 Khan Autos is a responsive storefront for browsing automotive accessories and placing product inquiries or orders through WhatsApp. The site presents the Khan Autos brand, highlights its service promises, and displays a catalog of car parts with descriptions and prices in PKR.
 
 ## Features
@@ -33,7 +33,7 @@ The app uses JavaScript and ES modules.
 1. Clone the repository and move into the project directory:
 
    ```bash
-   git clone <repository-url>
+   git clone https://github.com/Ayancyber/khan-autos.git
    cd khan-autos
    ```
 
