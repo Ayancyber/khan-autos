@@ -20,22 +20,23 @@ A modern, dark-themed single-page e-commerce web application for premium car acc
 
 If you want to run this project on your own machine:
 
-1. **Clone the repository:**
-   ```bash
-   git clone https://github.com/Ayancyber/khan-autos.git
-2. Navigate into the folder:
+- **Step 1:** Clone the repository:
+  `git clone https://github.com/Ayancyber/khan-autos.git`
 
-   ```bash
-cd khan-autos
-Install dependencies:
+- **Step 2:** Navigate into the folder:
+  `cd khan-autos`
 
-  ```bash
-npm install
-Start the development server:
+- **Step 3:** Install dependencies:
+  `npm install`
 
-  ```bash
-npm run dev
-👨‍💻 Author
-Ayan Imran
+- **Step 4:** Start the development server:
+  `npm run dev`
 
-GitHub: @Ayancyber
+## 👨‍💻 Author
+
+**Ayan Imran**
+
+- GitHub: [@Ayancyber](https://github.com/Ayancyber)
+
+---
+*Made with React, Tailwind, and a lot of coffee.* ☕
