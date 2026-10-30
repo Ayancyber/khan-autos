@@ -1,42 +1,100 @@
-# 🚗 Khan Autos | Premium Car Accessories
+# Khan Autos
 
-A modern, dark-themed single-page e-commerce web application for premium car accessories. Built from scratch to practice React, state management, and UI animations.
+Khan Autos is a responsive storefront for browsing automotive accessories and placing product inquiries or orders through WhatsApp. The site presents the Khan Autos brand, highlights its service promises, and displays a catalog of car parts with descriptions and prices in PKR.
 
-## 🔥 Features
+## Features
 
-- **Interactive Product Cards:** Features a 3D hover effect (`rotate-x` and `rotate-y`) to make the products pop.
-- **WhatsApp Checkout Integration:** A custom modal form that captures user data and sends the complete order details directly to the business owner's WhatsApp using `wa.me` URL encoding.
-- **Animated Background:** A custom CSS starry particle background that floats continuously for a premium feel.
-- **Fully Responsive:** Carefully designed to work seamlessly on mobile, tablet, and desktop screens.
-- **SEO Optimized:** Includes Open Graph and Twitter meta tags for clean social media sharing.
+- Landing page with branded navigation and a hero section
+- About section describing the store's value propositions
+- Product cards with images, descriptions, and PKR prices
+- Order form that collects a customer's name, phone number, and address
+- WhatsApp checkout that opens a pre-filled order message
+- Responsive styling with Tailwind CSS
 
-## 🛠️ Tech Stack
+> **Ordering note:** Checkout opens WhatsApp with the selected product and customer details pre-filled. The project does not currently include a backend, payment processing, or order database.
 
-- **React** (Vite)
-- **Tailwind CSS** (v4)
-- **Lucide React** (Icons)
+## Tech stack
 
-## 💻 How to Run Locally
+- **React 19** for the user interface
+- **Vite 8** for local development and production builds
+- **Tailwind CSS 4** with the `@tailwindcss/vite` plugin for styling
+- **Lucide React** for icons
+- **ESLint 10** for linting
 
-If you want to run this project on your own machine:
+The app uses JavaScript and ES modules.
 
-- **Step 1:** Clone the repository:
-  `git clone https://github.com/Ayancyber/khan-autos.git`
+## Requirements
 
-- **Step 2:** Navigate into the folder:
-  `cd khan-autos`
+- Node.js compatible with Vite 8
+- npm
 
-- **Step 3:** Install dependencies:
-  `npm install`
+## Setup
 
-- **Step 4:** Start the development server:
-  `npm run dev`
+1. Clone the repository and move into the project directory:
 
-## 👨‍💻 Author
+   ```bash
+   git clone <repository-url>
+   cd khan-autos
+   ```
 
-**Ayan Imran**
+2. Install dependencies:
 
-- GitHub: [@Ayancyber](https://github.com/Ayancyber)
+   ```bash
+   npm install
+   ```
 
----
-*Made with React, Tailwind, and a lot of coffee.* ☕
+3. Start the development server:
+
+   ```bash
+   npm run dev
+   ```
+
+   Vite prints the local URL in the terminal (typically `http://localhost:5173`).
+
+## Available scripts
+
+| Command | Description |
+| --- | --- |
+| `npm run dev` | Start the Vite development server with hot module replacement |
+| `npm run build` | Create an optimized production build in `dist/` |
+| `npm run preview` | Serve the production build locally for preview |
+| `npm run lint` | Run ESLint against the project |
+
+To preview a production build:
+
+```bash
+npm run build
+npm run preview
+```
+
+## Project structure
+
+```text
+.
+├── index.html              # HTML entry point and page metadata
+├── public/                 # Static files served from the site root
+├── src/
+│   ├── assets/             # Product, hero, and brand images
+│   ├── components/
+│   │   ├── About.jsx       # Why buy from Khan Autos section
+│   │   ├── Footer.jsx      # Site footer
+│   │   ├── Form.jsx        # Customer details and WhatsApp checkout
+│   │   ├── Hero.jsx        # Landing-page hero
+│   │   ├── Navbar.jsx      # Navigation and shop links
+│   │   ├── ProductCard.jsx # Individual product display and buy action
+│   │   └── Shop.jsx        # Product catalog
+│   ├── App.jsx             # Page composition and order-form state
+│   ├── index.css           # Global styles and Tailwind CSS import
+│   └── main.jsx            # React application entry point
+└── vite.config.js          # Vite, React, and Tailwind plugin configuration
+```
+
+## Updating products and contact details
+
+- Product information is currently defined in the `products` array in `src/components/Shop.jsx`.
+- The WhatsApp number used for checkout is configured in `src/components/Form.jsx`. The contact link in `src/components/Navbar.jsx` also points to WhatsApp; update both locations if the business number changes.
+- Product and brand imagery is stored in `src/assets/`; root-served static assets can be placed in `public/`.
+
+## Production
+
+Run `npm run build` to generate the static production site in `dist/`. Deploy the contents of that directory to a static hosting provider. Run `npm run preview` to test the generated build locally before deployment.
