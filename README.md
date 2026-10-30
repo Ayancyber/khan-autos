@@ -1,16 +1,41 @@
-# React + Vite
+# 🚗 Khan Autos | Premium Car Accessories
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, dark-themed single-page e-commerce web application for premium car accessories. Built from scratch to practice React, state management, and UI animations.
 
-Currently, two official plugins are available:
+## 🔥 Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- **Interactive Product Cards:** Features a 3D hover effect (`rotate-x` and `rotate-y`) to make the products pop.
+- **WhatsApp Checkout Integration:** A custom modal form that captures user data and sends the complete order details directly to the business owner's WhatsApp using `wa.me` URL encoding.
+- **Animated Background:** A custom CSS starry particle background that floats continuously for a premium feel.
+- **Fully Responsive:** Carefully designed to work seamlessly on mobile, tablet, and desktop screens.
+- **SEO Optimized:** Includes Open Graph and Twitter meta tags for clean social media sharing.
 
-## React Compiler
+## 🛠️ Tech Stack
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **React** (Vite)
+- **Tailwind CSS** (v4)
+- **Lucide React** (Icons)
 
-## Expanding the ESLint configuration
+## 💻 How to Run Locally
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+If you want to run this project on your own machine:
+
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/Ayancyber/khan-autos.git
+2. Navigate into the folder:
+
+   ```bash
+cd khan-autos
+Install dependencies:
+
+  ```bash
+npm install
+Start the development server:
+
+  ```bash
+npm run dev
+👨‍💻 Author
+Ayan Imran
+
+GitHub: @Ayancyber
